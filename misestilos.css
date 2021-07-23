@@ -1,0 +1,274 @@
+@font-face{
+    font-family:"Negrita";
+    src: url('fuentes/Comfortaa-Bold.ttf');
+}
+@font-face{
+    font-family:"simple";
+    src: url('fuentes/Comfortaa-Light.ttf');
+}
+
+/*header*/
+body {
+    background-image: url(imagenportada.png);
+    background-size:100%;
+    background-attachment: fixed;
+}  
+div#contenedor {
+width: 100%;
+height: 700px;
+background-color: white;
+}
+#header {
+    width: 100%;
+    height: 700px;
+}
+div#contenedor2 {
+    margin: auto;
+    margin-top: 40px;
+    width: 1000px;
+   height: 800px;
+}
+div#contenedorrenders {
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+    }
+div#contenedorinterior {
+    margin: auto;
+    margin-top: 40px;
+    width: 1000px;
+    height: 900px;
+}
+#h1 {
+    font-family: "negrita";
+    font-size:100px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    left: 900px;
+    top: 190px;
+}
+#h2 {
+    font-family: "negrita";
+    font-size:40px;
+    font-style: bold;
+    color: rgb(255, 255, 255);
+    position: relative;
+   right: 100px;
+    top: -80px;
+ }
+.logo1 {
+    position: relative;
+    left: 300px;
+    top: -130px;
+    display: none;
+}
+.texto1 {
+    color: white;
+    font-family: "simple";
+    font-size: 30px;
+    left: 50px;
+    display: none;
+}
+#menu {
+    background-color: #A2A2A2;
+}
+#menu ul li a{
+    color: #FFFFFF;
+    font-family: "simple";
+}
+#menu ul li{
+    background-color:#767474;
+    font-family: "simple";
+}
+.desp {
+background-color: #32343B ;
+}
+.footer {
+    background-color:#A2A2A2;
+    padding:30px;
+}
+#portada {
+    font-family: "negrita";
+    font-size: 50px;
+    font-style: bold;
+    color: rgb(0, 0, 0);
+   text-align: center;
+   margin-top: 120px;
+}
+#lista1 {
+    font-family: "negrita";
+    font-size:30px;
+    color: #767474;
+    margin-left: 30px;
+   margin-top: 50px;
+}
+#lista3 {
+    font-family: "negrita";
+    font-size:20px;
+    color: #767474;
+    margin-left: 30px;
+   margin-top: 50px;
+}
+#QER {
+    font-family: "negrita";
+    font-size:50px;
+    color: rgb(0, 0, 0);
+   text-align: center;
+   margin-top: 120px;
+}
+#textop {
+    font-family: "simple";
+    font-size: 17px;
+    color: #767474;
+   margin-top: 50px;
+   text-align: justify;
+}
+#solologo {
+    position: static;
+   height: 200px;
+   width: 200px;
+   margin-left: 35px;
+}
+.textofooter {
+    font-family: "simple";
+    font-size: 15px;
+    color: white;
+}
+#logoredes {
+    position: relative;
+    height: 100px;
+    width: 100px; 
+    margin-top: 20px;
+}
+.redes {
+    font-family: "simple";
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+.formulario input {
+   border-radius: 10px;
+   padding: 7px;
+   font-family: "simple";
+   font-size: 12px;
+   color: #767474;
+   margin-bottom: 10px;
+   border-color:rgb(184, 184, 184) ;
+}
+:focus {
+  outline: none;
+}
+.formulario input[type="submit"] {
+    width: 140px;
+    background:#767474;
+    color: white;
+    padding: 5px;
+
+    align-self: flex-end;
+    cursor: pointer;
+}
+.formulario input[type="submit"]:hover {
+    background-color: #b1acac;
+}
+/* ventana de errores*/
+
+.modal_wrap {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mensaje_modal {
+    background-color: white;
+    width: 300px;
+    padding: 20px 20px 20px;
+    color:#767474;
+    border-radius: 10px;
+}
+.mensaje_modal h3{
+text-align: center;
+font-family: "negrita";
+font-size: 23px;
+font-weight: 400;
+}
+.mensaje_modal h3:after{
+    content: "";
+    display: block;
+    background:#767474;
+    width: 100%;
+    height: 1px;
+    margin: 10px 0px 10px;
+    }
+.mensaje_modal p{
+    font-family: "simple";
+    color: #ff0000;
+    font-size: 15px;
+}
+ #botonclose {
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+    background: #767474;
+    cursor: pointer;
+    color: #ffffff;
+    border-radius: 5px;
+}
+.envio {
+    display: block;
+    background-color: white;
+    width: 400px;
+    height: 100px;
+    border-radius: 20px;
+    margin-top: -200px;
+}
+.mensaje_exito {
+    font-family: "negrita";
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+.mj {
+    font-family: "negrita";
+    font-size: 17px;
+    text-align: center;
+    margin-top: 30px;
+    color:  #767474; 
+}
+.active {
+    color: rgba(0,0,0,0); 
+    font-family: "simple";
+    text-align: center;   
+}
+#portadaext {
+background-color:white;
+font-family: "simple";
+font-size: 17px;
+color:  #767474;
+text-align: center;
+height: 80px;
+margin-top: 20px;
+}
+#contenedorvideo {
+    margin: auto;
+    margin-top: 40px;
+    width: 1200px;
+   height: 600px;
+}
+#contenedorrendersvideo {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+    }

@@ -1,0 +1,168 @@
+<!--presupuesto-->
+<!DOCTYPE html >
+<html lang="es">
+<head>		
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+<title>FP | servicio de renders | Alto valle</title>
+<meta name="author" content="PAREDES Paulina" />
+<meta name="keywords" content="Renders, Arquitectura, previsualizacion" />
+<meta name="description" content="servicio y producción de Renders">
+<link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link href = "https: //fonts.googleapis.com/css2? family = Comfortaa: wght @ 300; 400; 500; 600; 700 & display = swap "rel =" stylesheet ">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="misestilos.css" />
+<script type="text/javascript" src=”miscript.js”></script>
+</head>
+<body>
+   <!--<div class="modal_wrap">
+   <div class="mensaje_modal">
+      <h3>Errores encontrados</h3>
+      <p>Ingrese un nombre</p>
+      <p>Ingrese un mail</p>
+      <p>Ingrese un telefono de contacto</p>
+      <p>Cargue un archivo</p>
+      <span id="botonclose">Cerrar</span>
+   </div>
+   </div>-->
+<div id="contenedor">
+<nav id="menu">
+   <ul class="nav nav-tabs justify-content-end $gris-500">
+      <li class="nav-item ">
+        <a class="nav-link" aria-current="page" href="index.html">PRINCIPAL</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="RENDERS" role="button">RENDERS</a>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+         <li><a class="dropdown-item desp" href="exterior.html" target="_self" >EXTERIOR</a></li>
+         <li><a class="dropdown-item desp" href="interior.html">INTERIOR</a></li>
+         <li><a class="dropdown-item desp" href="plantasaxo.html">PLANTAS AXO</a></li>
+         <li><a class="dropdown-item desp" href="productos.html">PRODUCTOS</a></li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="" role="button">ANIMACIÓN</a>
+         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+           <li><a class="dropdown-item desp" href="videospromocionales.html" target="_self" >VIDEOS PROMOCIONALES</a></li>
+       </li>
+      </ul>
+      <li class="nav-item">
+        <a class="nav-link active" style="color:black" href="presupuesto.html" target="_self" -1 aria-disabled="true">PRESUPUESTO</a>
+      </li>
+    </ul>
+</nav>
+<div id="contenedor2">
+   <div class="container">
+      <div class="row">
+        <div class="col">
+          <div id="portada">REQUISITOS</div>
+          <div>
+             <ul type="circle" id="lista3">
+            <li>Planos: AutoCad-SketchUp-Pdf</li>
+            <li>Modelo 3d (esto es si se tiene)</Main></Main></li>
+            <li>Elección del estilo de decoración</li>
+            <li>Memoria descriptiva de materiales</li>
+            </ul>
+         </div>
+        </div>
+        <div class="col">
+         <div id="QER">CONTACTENOS</div>
+             <form method="post" action="enviar.php">
+                 <div class="formulario">
+                <input type="text" id="nombre" name="nombre" placeholder="ingrese su nombre*" required><br>
+                 <Input type="email" id="email" name="email" placeholder="ingrese su correo*" required><br>
+                 <Input type="tel" id="telefono" name="telefono" placeholder="ingrese un telefono de contacto*" value="" max="15" required><br>
+                 <Input type="file" id="archivo" name="archivo" placeholder="archivo cat/pdf/jpeg*" required><br>
+                  <input type="submit" value="Enviar consulta" id="botonSend">
+                </div>  
+             </form>
+        </div>
+      </div>
+</div>
+</div>
+<footer class="footer">
+  <div class="row">
+     <div class="col">
+      <img src="logofp.png" id="solologo">
+     </div>
+     <div class="col-5 textofooter">
+        FP Rennders <br>
+        <br>
+        ALTO-VALLE <br>
+        <br>
+        Email<br>
+        fpserviciorender@gmail.com<br>
+        <br>
+        Teléfono<br>
+        +54 299 5248430 | +54 298 4508982
+     </div>
+     <div class="col">
+     <div class="redes">SÍGUENOS!!</div>
+      <a href="https://www.facebook.com/FP-renders-103593488346402" target="_blank"><img src="logofacebook.png" alt="logofacebook" id="logoredes"></a>
+      <a><img src="logoinstagram.png" alt="logoinstagram" id="logoredes"></a>
+      <a href="https://api.whatsapp.com/send?phone=2984508982" target="_blank"><img src="logowhasap.png" alt="logowhatsap" id="logoredes"></a>
+     </div>
+   </div>
+ </div>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   $(document).ready(function() {
+   
+      $('#botonSend').click(function() {
+
+         var errores ='';
+  
+  //validar datos 
+  if( $('#nombre').val() == '' ){
+     errores += '<p>Escriba un nombre</p>'; 
+     $('#nombre').css("border-color", "#F1484B")   
+} else{
+    $('#nombre').css("border-color", "rgb(184, 184, 184)")
+  }
+
+if( $('#email').val() == '' ){
+      errores += '<p> Ingrese un mail</p>';
+      $('#email').css("border-color", "#F1484B")
+}else{
+  $('#email').css("border-color", "rgb(184, 184, 184)")
+  }
+
+if( $('#telefono').val() == '' ){
+      errores += '<p> Ingrese un numero de contacto</p>';
+      $('#telefono').css("border-color", "#F1484B")
+}else{
+  $('#telefono').css("border-color", "rgb(184, 184, 184)")
+  }
+
+if( $('#archivo').val() == '' ){
+  errores += '<p> Cargue un archivo pdf o cat</p>';
+  $('#archivo').css("border-color", "#F1484B")
+}else{
+  $('#archivo').css("border-color", "rgb(184, 184, 184)")
+  }
+
+   //enviando mensaje//
+   if(errores == '' == false){
+        var mensajeModal = '<div class="modal_wrap">'+
+                           '<div class="mensaje_modal">'+
+                                '<h3>Errores encontrados</h3>'+
+                                 errores+
+                                 '<span id="botonclose">Cerrar</span>'+
+                           '</div>'+
+                           '</div>'
+
+  $('body').append(mensajeModal);
+    }
+
+  //cerrar modal//
+  $('#botonclose').click(function(){
+   $('.modal_wrap').remove();
+  });
+});
+});
+</script>
+</body>
+</html>
